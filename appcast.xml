@@ -3,13 +3,13 @@
   <channel>
     <title>Claude Acc</title>
     <item>
-      <title>1.1.0</title>
-      <pubDate>Mon, 02 Nov 2026 13:18:24 +0000</pubDate>
-      <sparkle:version>2</sparkle:version>
-      <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+      <title>1.1.1</title>
+      <pubDate>Mon, 02 Nov 2026 13:19:39 +0000</pubDate>
+      <sparkle:version>3</sparkle:version>
+      <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-      <description sparkle:format="plain-text"><![CDATA[Bản đầu có tự cập nhật. Thêm API key làm acc dự phòng khi mọi acc chạm 95%, kèm ước tính chi phí.]]></description>
-      <enclosure url="https://github.com/ngocnhat2k1/claude-acc-releases/releases/download/mac-v1.1.0/ClaudeAcc-1.1.0.zip" type="application/octet-stream" sparkle:edSignature="nE3yGCZtwkV2CjUKO6e5LnGJrL1jtqmGf0uHP3VRuLR9Or8XPCbEc0r4Reyfz28T8XCnqu7j6LkXHGCLnwckCQ==" length="1420904"/>
+      <description sparkle:format="plain-text"><![CDATA[Bản thử chuỗi tự cập nhật, không đổi chức năng.]]></description>
+      <enclosure url="https://github.com/ngocnhat2k1/claude-acc-releases/releases/download/mac-v1.1.1/ClaudeAcc-1.1.1.zip" type="application/octet-stream" sparkle:edSignature="1oQQTK60j5GIX5XnW4QGgKWnRJ8xy1FCJGNYVC5elpQj3DAlXcjcfHaYfnoe0EkByYZzH0ZYXtLF/JwQV0+VBg==" length="1420905"/>
     </item>
   </channel>
 </rss>
