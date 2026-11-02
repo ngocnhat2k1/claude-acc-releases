@@ -3,13 +3,13 @@
   <channel>
     <title>Claude Switcher</title>
     <item>
-      <title>1.2.1</title>
-      <pubDate>Mon, 02 Nov 2026 17:04:09 +0000</pubDate>
-      <sparkle:version>5</sparkle:version>
-      <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
+      <title>1.2.2</title>
+      <pubDate>Mon, 02 Nov 2026 17:27:45 +0000</pubDate>
+      <sparkle:version>6</sparkle:version>
+      <sparkle:shortVersionString>1.2.2</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-      <description sparkle:format="plain-text"><![CDATA[Vòng tròn hiện hạn mức chính (5 giờ hoặc tuần), không lấy hạn mức Fable. Acc không có giới hạn tuần thì ẩn hàng Tuần.]]></description>
-      <enclosure url="https://github.com/ngocnhat2k1/claude-acc-releases/releases/download/mac-v1.2.1/ClaudeAcc-1.2.1.zip" type="application/octet-stream" sparkle:edSignature="I4IJtT+t7iBTto7T3oyQBMsjylq1l6cBX+UVEXJ6wTyY9WVonMvu+ktG9L+vs0BzYBYW6TJHIZc4MMt17//eAA==" length="3167908"/>
+      <description sparkle:format="plain-text"><![CDATA[Nhãn gói có màu (Pro, Max, Ultra, Team Standard, Team Premium, API key). Không còn lặp khung 5 giờ/tuần giữa vòng tròn và thanh ngang.]]></description>
+      <enclosure url="https://github.com/ngocnhat2k1/claude-acc-releases/releases/download/mac-v1.2.2/ClaudeAcc-1.2.2.zip" type="application/octet-stream" sparkle:edSignature="V7BdCEE9m9m3TR4eSp+vHka2A6u+ylGHfifrnLVjZ/FntvPP6R61563kJii7BjqyDG90nh6zCQ/uNNOhTs2CDw==" length="3189954"/>
     </item>
   </channel>
 </rss>
