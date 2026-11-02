@@ -6,7 +6,7 @@ Repo này chỉ chứa bản cài và các file để app tự cập nhật, cho
 
 ### Cài lần đầu
 
-1. Tải [ClaudeAcc.dmg](https://github.com/ngocnhat2k1/claude-acc-releases/releases/latest/download/ClaudeAcc.dmg). Chỉ chạy trên Mac chip Apple, macOS 13 trở lên.
+1. Tải [ClaudeAcc.dmg](https://github.com/ngocnhat2k1/claude-acc-releases/releases/download/mac/ClaudeAcc.dmg). Chỉ chạy trên Mac chip Apple, macOS 13 trở lên.
 2. Mở file dmg, kéo **Claude Acc** vào thư mục **Applications**.
 3. Lần đầu mở, macOS chặn vì app chưa được Apple chứng nhận. Vào **Cài đặt hệ thống → Quyền riêng tư & Bảo mật**, kéo xuống và bấm **Vẫn mở**. Hoặc chạy `xattr -cr /Applications/"Claude Acc.app"` trong Terminal.
 
