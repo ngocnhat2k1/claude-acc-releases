@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
   <channel>
-    <title>Claude Acc</title>
+    <title>Claude Switcher</title>
     <item>
-      <title>1.1.1</title>
-      <pubDate>Mon, 02 Nov 2026 13:19:39 +0000</pubDate>
-      <sparkle:version>3</sparkle:version>
-      <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+      <title>1.2.0</title>
+      <pubDate>Mon, 02 Nov 2026 17:02:36 +0000</pubDate>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-      <description sparkle:format="plain-text"><![CDATA[Bản thử chuỗi tự cập nhật, không đổi chức năng.]]></description>
-      <enclosure url="https://github.com/ngocnhat2k1/claude-acc-releases/releases/download/mac-v1.1.1/ClaudeAcc-1.1.1.zip" type="application/octet-stream" sparkle:edSignature="1oQQTK60j5GIX5XnW4QGgKWnRJ8xy1FCJGNYVC5elpQj3DAlXcjcfHaYfnoe0EkByYZzH0ZYXtLF/JwQV0+VBg==" length="1420905"/>
+      <description sparkle:format="plain-text"><![CDATA[Giao diện mới kiểu app hệ thống (Liquid Glass), đổi tên thành Claude Switcher. Chọn model và effort mặc định ngay trong menu, xem hạn mức Fable, thêm acc tự mở trình duyệt đăng nhập.]]></description>
+      <enclosure url="https://github.com/ngocnhat2k1/claude-acc-releases/releases/download/mac-v1.2.0/ClaudeAcc-1.2.0.zip" type="application/octet-stream" sparkle:edSignature="yYZ75/TGUBG2t2A0IeUZFcu1qv+F7Dn+THnlnFkBb48h1MJeQs4z0/U1iDxUakUMGjbb1b990g4UYkil6IxoBQ==" length="3166486"/>
     </item>
   </channel>
 </rss>
