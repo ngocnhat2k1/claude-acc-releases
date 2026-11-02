@@ -14,7 +14,10 @@
   # File mô tả có chữ ký: payload là JSON (bản mới nhất, đường tải, SHA-256 của từng file .exe).
   # PowerShell không kiểm được chữ ký Ed25519, nên lần cài đầu dựa vào HTTPS và SHA-256.
   # Từ lần cập nhật sau, chính app kiểm chữ ký trước khi nhận bản mới.
-  $latest = Invoke-RestMethod "https://raw.githubusercontent.com/ngocnhat2k1/claude-acc-releases/main/windows/latest.json?t=$([DateTimeOffset]::UtcNow.ToUnixTimeSeconds())"
+  # Đọc qua API của GitHub, không qua raw.githubusercontent.com: CDN của nó có lúc giữ bản cũ nhiều phút.
+  $r = Invoke-WebRequest 'https://api.github.com/repos/ngocnhat2k1/claude-acc-releases/contents/windows/latest.json?ref=main' -UseBasicParsing -Headers @{ Accept = 'application/vnd.github.raw'; 'User-Agent' = 'claude-acc-install' }
+  $text = if ($r.Content -is [byte[]]) { [Text.Encoding]::UTF8.GetString($r.Content) } else { $r.Content }
+  $latest = $text | ConvertFrom-Json
   $manifest = [Text.Encoding]::UTF8.GetString([Convert]::FromBase64String($latest.payload)) | ConvertFrom-Json
   $asset = $manifest.assets.$arch
   if (-not $asset) { throw "Bản $($manifest.version) chưa có cho máy $arch." }
