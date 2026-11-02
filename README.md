@@ -18,7 +18,18 @@ Mỗi bản được ký bằng khoá EdDSA của người phát hành. App khô
 
 ## Windows
 
-Bản Windows hiện là công cụ dòng lệnh `claude-acc`. Nó đổi acc Claude Code, thêm acc, xem hạn mức và có lệnh `doctor`. App ở khay hệ thống sẽ có sau, và tự về máy qua cập nhật.
+Claude Switcher cho Windows gồm hai phần, cài cùng một lệnh:
+- **App khay** `ClaudeSwitcher.exe`: icon vòng tròn ở góc phải thanh tác vụ, đổi màu theo hạn mức đang dùng. Bấm vào là hiện bảng, giao diện giống bản Mac.
+- **Dòng lệnh** `claude-acc`: làm được mọi việc như app, và có thêm lệnh `doctor` để kiểm tra máy.
+
+App làm được:
+- **Đổi acc** bằng một cú bấm, không phải đăng nhập lại.
+- **Thêm acc:** app tự mở trình duyệt để bạn đăng nhập.
+- **Xem hạn mức** 5 giờ, tuần và Fable của từng acc.
+- **Tự đổi acc** khi acc đang dùng chạm 95%. Tắt được bằng chip "Tự đổi".
+- **Chọn Model và Effort** mặc định cho Claude Code.
+- **API key dự phòng:** dùng khi mọi acc đều hết hạn mức, có ước tính chi phí.
+- **Đổi luôn cả WSL:** bản WSL nào bật "Dùng chung đăng nhập với Windows" trong phần cài đặt thì đổi theo Windows.
 
 ### Cài
 
@@ -28,22 +39,30 @@ Mở PowerShell (không cần quyền admin), dán dòng này rồi Enter:
 [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor 3072; irm https://raw.githubusercontent.com/ngocnhat2k1/claude-acc-releases/main/install.ps1 | iex
 ```
 
-Lệnh này làm ba việc:
+Lệnh này:
 
-1. Tải bản hợp với máy (x64 hoặc ARM64) vào `%LOCALAPPDATA%\ClaudeAcc\bin`, rồi kiểm mã SHA-256 của file.
+1. Tải bản hợp với máy (x64 hoặc ARM64) của cả app lẫn dòng lệnh vào `%LOCALAPPDATA%\ClaudeAcc\bin`, và kiểm mã SHA-256 của từng file.
 2. Thêm thư mục đó vào PATH.
-3. In số phiên bản.
+3. Tạo lối tắt **Claude Switcher** trong Start Menu và bật mở cùng Windows.
+4. Mở app.
 
-Sau đó gõ `claude-acc doctor` để kiểm tra máy, và `claude-acc` để xem các lệnh.
+Icon nằm ở góc phải thanh tác vụ. Không thấy thì bấm dấu **^** và kéo icon ra ngoài.
+
+Cài lại thì chạy lại đúng lệnh trên. Các acc đã lưu vẫn còn.
 
 ### Cập nhật
 
-Mỗi ngày một lần, sau khi bạn chạy một lệnh `claude-acc` bất kỳ, app tự kiểm tra bản mới. Có bản mới thì app tải về và thay, lần chạy sau dùng bản mới. Muốn cập nhật ngay thì chạy `claude-acc update`.
+- **App:** tự kiểm tra bản mới 5 phút một lần và mỗi khi mở bảng. Có bản mới thì Windows hiện thông báo, và bảng có nút **Cập nhật**. Bấm vào là app tự tải, thay file rồi mở lại.
+- **Dòng lệnh:** tự cập nhật mỗi ngày một lần. Muốn cập nhật ngay thì chạy `claude-acc update`.
+- **Máy đang có bản dòng lệnh 0.1.x:** tự lên bản mới. Ở lần chạy `claude-acc` kế tiếp, nó tải app về, tạo lối tắt Start Menu và mở app. Muốn có ngay thì chạy `claude-acc update` hai lần: lần đầu lên bản mới, lần sau tải app.
 
 Mỗi bản có file mô tả `windows/latest.json` kèm chữ ký Ed25519. App chỉ nhận bản đúng chữ ký, đúng mã SHA-256, và có số phiên bản cao hơn bản đang chạy.
 
 ### Gỡ
 
-Xoá thư mục `%LOCALAPPDATA%\ClaudeAcc`, rồi bỏ `%LOCALAPPDATA%\ClaudeAcc\bin` khỏi PATH của user (Cài đặt → Hệ thống → Giới thiệu → Cài đặt hệ thống nâng cao → Biến môi trường).
+1. Thoát app: bấm chuột phải vào icon, chọn **Thoát**.
+2. Xoá thư mục `%LOCALAPPDATA%\ClaudeAcc` và lối tắt Start Menu **Claude Switcher**.
+3. Bỏ `%LOCALAPPDATA%\ClaudeAcc\bin` khỏi PATH của user (Cài đặt → Hệ thống → Giới thiệu → Cài đặt hệ thống nâng cao → Biến môi trường).
+4. Xoá giá trị **Claude Switcher** trong Task Manager → Startup apps (hoặc tắt "Mở cùng Windows" trong app trước khi thoát).
 
-Lưu ý: thư mục `%LOCALAPPDATA%\ClaudeAcc` còn chứa kho acc đã lưu. Xoá nó là mất các acc đã lưu, và phải `/login` lại.
+Lưu ý: thư mục `%LOCALAPPDATA%\ClaudeAcc` còn chứa kho acc và API key đã lưu. Xoá nó là mất các acc đã lưu, và phải đăng nhập lại.
