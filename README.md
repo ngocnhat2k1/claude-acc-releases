@@ -12,7 +12,7 @@ Claude Switcher (tên cũ Claude Acc) đổi acc Claude Code. Repo này chỉ ch
 
 ### Cập nhật
 
-App tự kiểm tra bản mới mỗi ngày. Có bản mới thì macOS hiện thông báo và menu có nút **Cập nhật**. Bấm vào là app tự tải, cài và mở lại. Muốn kiểm tra ngay thì bấm **Kiểm tra bản mới** ở cuối menu.
+App tự kiểm tra bản mới 5 phút một lần và mỗi khi mở menu (từ bản 1.2.3; bản cũ hơn mỗi ngày một lần). Có bản mới thì macOS hiện thông báo và menu có nút **Cập nhật**. Bấm vào là app tự tải, cài và mở lại. Muốn kiểm tra ngay thì bấm **Kiểm tra bản mới** ở cuối menu.
 
 Mỗi bản được ký bằng khoá EdDSA của người phát hành. App không cài bản nào có chữ ký không khớp.
 
