@@ -3,13 +3,13 @@
   <channel>
     <title>Claude Switcher</title>
     <item>
-      <title>1.3.2</title>
-      <pubDate>Tue, 03 Nov 2026 04:36:20 +0000</pubDate>
-      <sparkle:version>10</sparkle:version>
-      <sparkle:shortVersionString>1.3.2</sparkle:shortVersionString>
+      <title>1.3.3</title>
+      <pubDate>Tue, 03 Nov 2026 04:40:23 +0000</pubDate>
+      <sparkle:version>11</sparkle:version>
+      <sparkle:shortVersionString>1.3.3</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-      <description sparkle:format="plain-text"><![CDATA[Nút Thêm gọn hơn (dạng viên thuốc), avatar tài khoản to hơn.]]></description>
-      <enclosure url="https://github.com/ngocnhat2k1/claude-acc-releases/releases/download/mac-v1.3.2/ClaudeAcc-1.3.2.zip" type="application/octet-stream" sparkle:edSignature="DYM5KRI70tks/1QbuA74RBb1WOnmLNF7zknFjlFyEDt5LxK7hH2ekoJEdJZ1GZoQQxfNWXNojCuuwx2VLOFGDw==" length="3041724"/>
+      <description sparkle:format="plain-text"><![CDATA[Mỗi tài khoản hiện thời điểm reset hạn mức (reset sau X giờ, hoặc ngày reset nếu còn xa) để dễ chọn tài khoản khác.]]></description>
+      <enclosure url="https://github.com/ngocnhat2k1/claude-acc-releases/releases/download/mac-v1.3.3/ClaudeAcc-1.3.3.zip" type="application/octet-stream" sparkle:edSignature="/h3RkQf+kcTJG8jKYmsQDjUo5OQGjb3rWSbkbendj3KpF0tobhjL4Ww/qWoaPi/MMCS9kiwDmNRrAJmgDAHiCA==" length="3045846"/>
     </item>
   </channel>
 </rss>
