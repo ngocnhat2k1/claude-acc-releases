@@ -3,13 +3,13 @@
   <channel>
     <title>Claude Switcher</title>
     <item>
-      <title>1.4.1</title>
-      <pubDate>Wed, 04 Nov 2026 02:27:46 +0000</pubDate>
-      <sparkle:version>14</sparkle:version>
-      <sparkle:shortVersionString>1.4.1</sparkle:shortVersionString>
+      <title>1.4.2</title>
+      <pubDate>Wed, 04 Nov 2026 16:10:15 +0000</pubDate>
+      <sparkle:version>15</sparkle:version>
+      <sparkle:shortVersionString>1.4.2</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-      <description sparkle:format="plain-text"><![CDATA[Thanh menu hiện hạn mức 5 giờ (acc không có khung 5 giờ thì hiện tuần). Cảnh báo và tự đổi acc vẫn xét mức cao nhất.]]></description>
-      <enclosure url="https://github.com/ngocnhat2k1/claude-acc-releases/releases/download/mac-v1.4.1/ClaudeAcc-1.4.1.zip" type="application/octet-stream" sparkle:edSignature="MJ6M8QoY1x3EGett73KfWefjSyAC+bzZsP5sJlDawR2MduD1G4r8aiMNh2eWmV2CLFSA76V7x9zVfeN1sIi9BA==" length="2971856"/>
+      <description sparkle:format="plain-text"><![CDATA[Đặt thứ tự ưu tiên cho từng acc: chuột phải vào thẻ acc, chọn Ưu tiên. Tự đổi acc đi theo thứ tự này (số 1 trước), không còn tự xếp acc team lên đầu.]]></description>
+      <enclosure url="https://github.com/ngocnhat2k1/claude-acc-releases/releases/download/mac-v1.4.2/ClaudeAcc-1.4.2.zip" type="application/octet-stream" sparkle:edSignature="pnolL7PnnOdoEfPQSUNjWBrG7aUGKkfPghDP8HsHNGHEAy5B5EE1H7lMJE0adX6apZt5CBE7n9F2eSYc5eb0CQ==" length="2986072"/>
     </item>
   </channel>
 </rss>
