@@ -25,8 +25,8 @@ Claude Switcher cho Windows gồm hai phần, cài cùng một lệnh:
 App làm được:
 - **Đổi acc** bằng một cú bấm, không phải đăng nhập lại.
 - **Thêm acc:** app tự mở trình duyệt để bạn đăng nhập.
-- **Xem hạn mức** 5 giờ, tuần và Fable của từng acc.
-- **Tự đổi acc** khi acc đang dùng chạm 95%. Tắt được bằng chip "Tự đổi".
+- **Xem hạn mức** 5 giờ, tuần và Fable của từng acc, kèm giờ reset.
+- **Tự đổi acc** khi acc đang dùng chạm 95%, theo thứ tự ưu tiên bạn tự xếp: số nhỏ ở góc thẻ acc, chuột phải vào thẻ rồi chọn **Ưu tiên** để đổi. Tắt được bằng công tắc "Tự đổi".
 - **Chọn Model và Effort** mặc định cho Claude Code.
 - **API key dự phòng:** dùng khi mọi acc đều hết hạn mức, có ước tính chi phí.
 - **Đổi luôn cả WSL:** bản WSL nào bật "Dùng chung đăng nhập với Windows" trong phần cài đặt thì đổi theo Windows.
